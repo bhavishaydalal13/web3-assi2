@@ -1,0 +1,6 @@
+function loggermiddleware(req,res,next){
+    console.log(req.method)
+    console.log(req.url)
+    next()
+}
+export {loggermiddleware}
